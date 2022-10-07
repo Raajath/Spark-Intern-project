@@ -33,6 +33,7 @@
     position:fixed;
     width: 100%;
    
+   
 }
    
 
@@ -43,6 +44,7 @@
    .logo {
     font-size: 32px;
     padding-left: 10px;
+    color: white;
    }
    /* NAVBAR MENU */
    .menu {
@@ -116,6 +118,8 @@ input[type=checkbox]{
    .foodI{
    width:100%;
    height: 100vh;
+   /*opacity: .9;*/
+   
    }
    .b{
 
@@ -158,8 +162,8 @@ h4{
   }
   .img_container .btn {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 75%;
+    left: 15%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #9c2780;
@@ -171,12 +175,19 @@ h4{
     border-radius: 5px;
     height:60px;
     width: 150px;
-    opacity: 0.7;
+    
+  }
+  .img_container .quote{
+    position: absolute;
+    top: 26%;
+    left: 6%;
+    color: #fff;
+    font-size: 35px;
   }
   
   .btn:hover{
-  opacity: 1;
-    color: white;
+ 
+    
   }
 
  
@@ -205,18 +216,17 @@ h4{
 }
 .b:nth-child(1)
  {
-        transition-delay: 200ms;
+        transition-delay: 400ms;
  }
 
  .b:nth-child(2)
  {
-        transition-delay: 200ms;
+        transition-delay: 300ms;
  }
 
  .b:nth-child(3)
  {
-    transition-delay:400ms ;
-
+    transition-delay: 200ms;
  }
 
 
@@ -229,8 +239,8 @@ h4{
 
     height: 400px;
     width: 400px;
-    border-radius: 100%;
-    margin-top: 40px;
+    
+    margin-top: 27px;
   }
 
 
@@ -244,6 +254,9 @@ h4{
   padding-bottom: 145px;
 
  }
+.infoP{
+  text-align: left;
+}
 
  .about_info{
   text-align: center;
@@ -297,4 +310,9 @@ p,h1,h4{
 }
 .footer-link{
   padding-left: 4px;
+}
+
+.img_container .btn .dn{
+
+  color: white;
 }
