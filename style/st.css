@@ -7,12 +7,16 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
    }
-   .scrollable-element {
-    scrollbar-color: red yellow;
-  }
+ 
    body {
     font-family: 'poppins',sans-serif;
     background-color:var(--primary-color) ;
+       }
+ .foodI{
+        width:100%;
+        min-height: 620px;
+       min-width: 341px;
+        
        }
    a {
     text-decoration: none;
@@ -75,8 +79,16 @@ input[type=checkbox]{
     user-select: none;
    }
    /* APPLYING MEDIA QUERIES */
+  
+  
+  @media only screen and (min-width:768px)
+  {
+    .img_container .btn{
+      top: 55%;
+      left: 20%;
+    }
 
-    
+  }  
    @media  (max-width: 768px) {
    .menu { 
     
@@ -119,17 +131,17 @@ input[type=checkbox]{
    .dropdown li:hover {
     background-color: #343434a1;
    }
+   .img_container .btn{
+    top: 20%;
+    left: 50%;
+  }
+   
+ 
    }
 
    /*section 2*/
  
-  .foodI{
-   width:100%;
-   min-height: 620px;
-  min-width: 341px;
-   /*opacity: .9;*/
-   
-   }
+
    .b{
 
     display: flex;
@@ -172,9 +184,8 @@ h4{
     
   }
   .img_container .btn {
-    position: absolute;
-    top:55%;
-    left: 20%;
+    position:absolute;
+    
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
      background: linear-gradient(to bottom right,#ff5746,#fcad10);;
@@ -187,7 +198,7 @@ h4{
     height:60px;
     width: 150px;
     font-weight: 600;
-    outline: none;
+    outline:none;
     
   }
   .img_container .quote{
